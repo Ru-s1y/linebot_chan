@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\LineService;
-use LINEBot\Constant\HTTPHeader;
-use LINEBot\SignatureValidator;
-use LINEBot\Event\FollowEvent;
-use  LINEBot\Event\MessageEvent\TextMessage;
-use LINEBot\Event\MessageEvent\LocationMessage;
-use LINEBot\Event\PostbackEvent;
-use LINEBot\Event\UnfollowEvent;
+use LINE\LINEBot\Constant\HTTPHeader;
+use LINE\LINEBot\SignatureValidator;
+use LINE\LINEBot\Event\FollowEvent;
+use LINE\LINEBot\Event\MessageEvent\TextMessage;
+use LINE\LINEBot\Event\MessageEvent\LocationMessage;
+use LINE\LINEBot\Event\PostbackEvent;
+use LINE\LINEBot\Event\UnfollowEvent;
 
 class LineController extends Controller
 {
