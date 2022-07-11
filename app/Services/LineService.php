@@ -2,8 +2,8 @@
 
 namespace App\Services;
 
-use Line\LINEBot;
-use Line\LINEBot\HTTPClient\CurlHTTPClient;
+use LINE\LINEBot;
+use LINE\LINEBot\HTTPClient\CurlHTTPClient;
 
 class LineService
 {
