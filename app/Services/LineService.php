@@ -20,6 +20,11 @@ class LineService
         $this->bot = new LINEBot($this->httpClient, ['channelSecret' => $this->channelSecret]);
     }
 
+    public function getBot()
+    {
+        return $this->bot;
+    }
+
     public function SendReplyMessage($replyToken, string $text): \LINE\LINEBot\Response
     {
         $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($text);
