@@ -38,7 +38,7 @@ class LineController extends Controller
             $replyToken = $event->getReplyToken();
             // $replyMessage = 'その操作はサポートしてません。.[' . get_class($event) . '][' . $event->getType() . ']';
 
-            $bot->replyText($replyToken, $event['message']['text']);
+            $bot->replyText($replyToken, $event->getText());
 
             // switch (true) {
             //     //友達登録＆ブロック解除
